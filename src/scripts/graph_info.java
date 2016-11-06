@@ -12,8 +12,8 @@ import java.util.Hashtable;
 public class graph_info extends Script {
 	@Override
 	public void run() {
-		final int NPC = 2805;
-		RSNPC[] npcs = NPCs.find(NPC);
+		final int NPC = 3;
+		RSNPC[] npcs = NPCs.find(2, NPC, 4, 5);
 		FileWriter fw = null;
 		
 		try {
