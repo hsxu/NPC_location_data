@@ -20,13 +20,13 @@ public class graph_info extends Script {
 			File file = new File("/Users/harveyxu/Library/Application Support/tribot/text.txt");
 			file.getParentFile().mkdirs();
 			
-			// if file doesnt exists, then create it
+			// if file doesn't exist, then create it
 			if (!file.exists()) {
 				System.out.println(file.getAbsoluteFile());
 				file.createNewFile();
 			}
+			
 			fw = new FileWriter(file.getAbsoluteFile());
-
 		} catch (IOException e) {
 			System.out.println(e.getMessage());
 		}
@@ -37,7 +37,7 @@ public class graph_info extends Script {
 				
 				try {
 					BufferedWriter bw = new BufferedWriter(fw);
-					bw.write((tile.getX()-Game.getBaseX()) + "," + (tile.getY()-Game.getBaseY()));
+					bw.write((tile.getX() - Game.getBaseX()) + "," + (tile.getY() - Game.getBaseY()));
 					bw.newLine();
 					bw.flush();
 				} catch (IOException e) {
