@@ -6,8 +6,6 @@ import org.tribot.api2007.types.RSNPC;
 import org.tribot.api2007.types.RSTile;
 import org.tribot.script.Script;
 import java.io.*;
-import java.util.ArrayList;
-import java.util.Hashtable;
 
 public class graph_info extends Script {
 	@Override
